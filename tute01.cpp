@@ -17,14 +17,19 @@ printf("Hello World") --> std::cout << "Hello World";
 2.54cm = 1 inch
 */
 
-
-#include <stdio.h>
-int main() 
+#include<iostream>
+using namespace std;
+int main()
 {
-    float cm, inches;
-    printf("Enter a length in cm : ");
-    scanf("%f",&cm);
-    inches = cm / 2.54;
-    printf("Length in inches is %f \n", inches);
+    float km, met,cent;
+	cout << "\n\n Convert centimeter into meter and kilometer :\n";
+	cout << "--------------------------------------------------\n";	
+    cout << " Input the distance in centimeter : ";
+    cin >> cent;
+	met = (cent/100); 
+	km = (cent/100000);
+	cout << " The distance in meter is: "<< met << endl;
+	cout << " The distance in kilometer is: "<< km << endl;	
+	cout << endl;
     return 0;
-}  
+}
